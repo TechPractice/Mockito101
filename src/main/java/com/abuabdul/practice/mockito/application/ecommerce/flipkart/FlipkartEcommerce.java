@@ -1,0 +1,66 @@
+package com.abuabdul.practice.mockito.application.ecommerce.flipkart;
+
+import com.abuabdul.practice.mockito.application.ApplicationRunConfig;
+import com.abuabdul.practice.mockito.application.ecommerce.OnlineEcommerce;
+
+import java.util.Scanner;
+import java.util.logging.Logger;
+
+/**
+ * Created by abuabdul on 5/16/2015.
+ */
+
+public class FlipkartEcommerce implements OnlineEcommerce, ApplicationRunConfig {
+
+    private final static Logger logger = Logger.getLogger(FlipkartEcommerce.class.getName());
+
+    @Override
+    public void showCatalogOfProducts() {
+
+    }
+
+    @Override
+    public void viewCartPage() {
+
+    }
+
+    @Override
+    public void displayWishlistProducts() {
+
+    }
+
+    @Override
+    public void purchaseProducts() {
+
+    }
+
+
+    @Override
+    public void run() {
+        logger.info("1. Show Products Catalog");
+        logger.info("2. Go to Cart page");
+        logger.info("3. Display Wishlist");
+        logger.info("4. Exit application");
+        Scanner scan = new Scanner(System.in);
+        int options = scan.nextInt();
+        do{
+            switch(options){
+                case 1:
+                    logger.info("Show catalogs");
+                    showCatalogOfProducts();
+                    break;
+                case 2:
+                    logger.info("Go to Cart page");
+                    viewCartPage();
+                    break;
+                case 3:
+                    logger.info("View Wishlist");
+                    displayWishlistProducts();
+                    break;
+                case 4: break;
+            }
+            options = scan.nextInt();
+        } while(options!=4);
+    }
+
+}
