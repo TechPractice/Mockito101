@@ -7,5 +7,12 @@ import java.util.logging.Logger;
  */
 public class CatalogService {
 
-    private final static Logger logger = Logger.getLogger(CatalogService.class.getName());
+	private final static Logger logger = Logger.getLogger(CatalogService.class.getName());
+
+	/**
+	 * 
+	 */
+	public CatalogService() {
+	}
+
 }
