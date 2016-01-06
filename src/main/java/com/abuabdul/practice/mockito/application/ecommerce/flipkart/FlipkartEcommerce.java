@@ -1,10 +1,10 @@
 package com.abuabdul.practice.mockito.application.ecommerce.flipkart;
 
-import com.abuabdul.practice.mockito.application.ApplicationRunConfig;
-import com.abuabdul.practice.mockito.application.ecommerce.OnlineEcommerce;
-
 import java.util.Scanner;
 import java.util.logging.Logger;
+
+import com.abuabdul.practice.mockito.application.ApplicationRunConfig;
+import com.abuabdul.practice.mockito.application.ecommerce.OnlineEcommerce;
 
 /**
  * Created by abuabdul on 5/16/2015.
@@ -14,28 +14,23 @@ public class FlipkartEcommerce implements OnlineEcommerce, ApplicationRunConfig 
 
     private final static Logger logger = Logger.getLogger(FlipkartEcommerce.class.getName());
 
-    @Override
     public void showCatalogOfProducts() {
 
     }
 
-    @Override
     public void viewCartPage() {
 
     }
 
-    @Override
     public void displayWishlistProducts() {
 
     }
 
-    @Override
     public void purchaseProducts() {
 
     }
 
 
-    @Override
     public void run() {
         logger.info("1. Show Products Catalog");
         logger.info("2. Go to Cart page");
